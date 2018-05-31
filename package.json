@@ -8,12 +8,8 @@
   },
   "scripts": {
     "start": "hexo server -i 172.20.0.102 -p 8080 -l",
-    "pub": "git subtree push --prefix=public/ web master",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "now --public",
-    "alias": "now alias xxx.now.sh crazypinkwidow",
-    "now ls": "now ls blog",
-    "now rm": "now rm xxxx.now.sh"
+    "pub": "git subtree push --prefix=public/ blog master",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
