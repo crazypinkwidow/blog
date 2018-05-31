@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "hexo server -i 172.20.0.102 -p 8080 -l",
+    "build": "hexo clean && hexo generate",
     "pub": "git subtree push --prefix=public/ blog master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
