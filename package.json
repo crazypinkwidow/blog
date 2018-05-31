@@ -2,10 +2,15 @@
   "name": "blog",
   "version": "0.0.1",
   "description": "my blog",
-  "main": "index.js",
+  "main": "server.js",
+  "alias": "crazypinkwidow",
   "scripts": {
-    "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "now --public",
+    "alias": "now alias xxx.now.sh crazypinkwidow",
+    "now ls": "now ls blog",
+    "now rm": "now rm xxxx.now.sh"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/crazypinkwidow/blog/issues"
   },
-  "homepage": "https://github.com/crazypinkwidow/blog#readme"
+  "homepage": "https://github.com/crazypinkwidow/blog#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "http-errors": "^1.6.3",
+    "pug": "^2.0.3"
+  }
 }
