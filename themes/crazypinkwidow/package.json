@@ -1,12 +1,26 @@
 {
-  "name": "hexo-theme-landscape",
-  "version": "0.0.2",
+  "name": "crazypinkwidow",
+  "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-build": "node-sass _sass/main.scss source/css/main.css",
+    "css-postcss": "postcss --use autoprefixer --use cssnano --no-map --output source/css/main.css source/css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "deploy": "npm run css-deploy && npm run js-build",
+    "js-build": "babel _javascript --out-dir scripts",
+    "js-watch": "npm run js-build -- --watch",
+    "watch": "npm run css-watch | npm run js-watch",
+    "build": "npm run css-deploy"
+  },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "load-grunt-tasks": "~0.2.0",
-    "grunt-git": "~0.2.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1"
+    "autoprefixer": "^8.6.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "bulma": "^0.7.1",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.9.0",
+    "postcss-cli": "^5.0.0"
   }
 }
