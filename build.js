@@ -9,7 +9,6 @@ Metalsmith(__dirname)
 .metadata({
   title: "CrazyPinkWidow",
   description: "CrazyPinkWidow's Blog",
-  generator: "Metalsmith",
   url: "https://crazypinkwidow.github.io/"
 })
 .source('src')
