@@ -7,18 +7,29 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <title>{{ title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Freckle+Face" rel="stylesheet">
-    {{!--<link inline href="assets/css/main.min.css">--}}
-    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link inline rel="stylesheet" type="text/css" href="assets/css/basscss.min.css">
     {{!--<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>--}}
   </head>
   <body>
-    
+  <div class="container">
+    <nav class="clearfix">
+      <div class="sm-col">
+        <a href="/" class="btn py2">Home</a>
+        <a href="/" class="btn py2">Burgers</a>
+        <a href="/" class="btn py2">Fries</a>
+      </div>
+      <div class="sm-col-right">
+        <a href="/" class="btn py2">About</a>
+      </div>
+    </nav>
+  </div>
 
+  
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
     <a class="navbar-brand" href="/">
-      <img src="/images/profile.jpg" width="48" height="48" class="rounded-circle" alt="">
-      CrazyPinkWidow
+      <img src="/images/profile.jpg" width="60" height="60" class="circle" alt="">
+      <span class="h2">CrazyPinkWidow</span>
     </a>
     
     <ul class="navbar-nav">
